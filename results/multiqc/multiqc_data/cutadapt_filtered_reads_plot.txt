@@ -1,0 +1,2 @@
+Sample	Pairs passing filters	Filtered pairs (uncategorised)
+SAMPLE1_PE	34244.0	6112.0

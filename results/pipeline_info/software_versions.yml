@@ -1,0 +1,80 @@
+BARRNAP:
+  barrnap: 0.9
+BARRNAPSUMMARY:
+  python: Python 3.9.1
+COMBINE_TABLE_DADA2:
+  R: 4.0.3
+CUTADAPT_BASIC:
+  cutadapt: 5.2
+CUTADAPT_SUMMARY_STD:
+  python: Python 3.8.3
+DADA2_DENOISING:
+  R: 4.4.3
+  dada2: 1.34.0
+DADA2_ERR:
+  R: 4.4.3
+  dada2: 1.34.0
+DADA2_FILTNTRIM:
+  R: 4.4.3
+  dada2: 1.34.0
+DADA2_MERGE:
+  R: 4.1.1
+  dada2: 1.22.0
+DADA2_QUALITY1:
+  R: 4.4.3
+  dada2: 1.34.0
+  ShortRead: 1.64.0
+DADA2_QUALITY2:
+  R: 4.4.3
+  dada2: 1.34.0
+  ShortRead: 1.64.0
+DADA2_RMCHIMERA:
+  R: 4.4.3
+  dada2: 1.34.0
+DADA2_STATS:
+  R: 4.4.3
+  dada2: 1.34.0
+DADA2_TAXONOMY:
+  R: 4.4.3
+  dada2: 1.34.0
+FASTQC:
+  fastqc: 0.12.1
+FILTER_STATS:
+  python: 3.9.1
+  pandas: 1.1.5
+FORMAT_TAXONOMY:
+  sed: 4.7
+MERGE_STATS_FILTERTAXA:
+  R: 4.4.3
+MERGE_STATS_STD:
+  R: 4.4.3
+PHYLOSEQ:
+  R: 4.4.2
+  phyloseq: 1.50.0
+QIIME2_BARPLOT:
+  qiime2: 2024.10.1
+QIIME2_EXPORT_ABSOLUTE:
+  qiime2: 2024.10.1
+QIIME2_EXPORT_RELASV:
+  qiime2: 2024.10.1
+QIIME2_EXPORT_RELTAX:
+  qiime2: 2024.10.1
+QIIME2_INASV:
+  qiime2: 2024.10.1
+QIIME2_INSEQ:
+  qiime2: 2024.10.1
+QIIME2_SEQFILTERTABLE:
+  qiime2: 2024.10.1
+QIIME2_TABLEFILTERTAXA:
+  qiime2: 2024.10.1
+RENAME_RAW_DATA_FILES:
+  sed: 4.7
+TREESUMMARIZEDEXPERIMENT:
+  R: 4.3.2
+  TreeSummarizedExperiment: 2.10.0
+TRUNCLEN:
+  python: 3.9.1
+  pandas: 1.1.5
+Workflow:
+    nf-core/ampliseq: v2.16.1-g7cf7ed2
+    Nextflow: 25.10.4

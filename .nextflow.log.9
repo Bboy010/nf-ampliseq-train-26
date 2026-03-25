@@ -1,0 +1,678 @@
+Mar-19 14:33:46.169 [main] DEBUG nextflow.cli.Launcher - $> nextflow run nf-core/ampliseq -r 2.16.1 -profile singularity -c config/custom.config --input samplesheet.csv --FW_primer GTGYCAGCMGCCGCGGTAA --RV_primer GGACTACNVGGGTWTCTAAT --outdir results -resume
+Mar-19 14:33:46.274 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.10.4
+Mar-19 14:33:46.307 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/blackboy/.nextflow/plugins; core-plugins: nf-amazon@3.4.4,nf-azure@1.20.2,nf-cloudcache@0.5.0,nf-codecommit@0.5.0,nf-console@1.3.0,nf-google@1.23.5,nf-k8s@1.2.2,nf-tower@1.17.5,nf-wave@1.16.1
+Mar-19 14:33:46.340 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Mar-19 14:33:46.342 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Mar-19 14:33:46.345 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Mar-19 14:33:46.363 [main] DEBUG nextflow.util.RetryConfig - Missing nextflow session - using default retry config
+Mar-19 14:33:46.509 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Mar-19 14:33:46.522 [main] DEBUG nextflow.scm.ProviderConfig - Using SCM config path: /home/blackboy/.nextflow/scm
+Mar-19 14:33:47.539 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/blackboy/.nextflow/assets/nf-core/ampliseq/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/ampliseq.git
+Mar-19 14:33:47.572 [main] DEBUG nextflow.scm.RepositoryFactory - Found Git repository result: [RepositoryFactory]
+Mar-19 14:33:47.582 [main] DEBUG nextflow.scm.AssetManager - Git config: /home/blackboy/.nextflow/assets/nf-core/ampliseq/.git/config; branch: master; remote: origin; url: https://github.com/nf-core/ampliseq.git
+Mar-19 14:33:53.671 [main] DEBUG nextflow.config.ConfigBuilder - Found config base: /home/blackboy/.nextflow/assets/nf-core/ampliseq/nextflow.config
+Mar-19 14:33:53.674 [main] DEBUG nextflow.config.ConfigBuilder - User config file: /home/blackboy/nf_amplicon_train/config/custom.config
+Mar-19 14:33:53.674 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/blackboy/.nextflow/assets/nf-core/ampliseq/nextflow.config
+Mar-19 14:33:53.675 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/blackboy/nf_amplicon_train/config/custom.config
+Mar-19 14:33:53.687 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Mar-19 14:33:55.800 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `singularity`
+Mar-19 14:33:55.823 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [bih, cfc_dev, uzl_omics, ifb_core, embl_hd, denbi_qbic, test_doubleprimers, alice, mjolnir_globe, uppmax, giga, test_pacbio_its, incliva, ilifu, ki_luria, uge, icr_alma, rosalind_uge, lugh, mccleary, unibe_ibu, vai, czbiohub_aws, jax, roslin, iris, tes, scw, unc_longleaf, test_sintax, tigem, tubingen_apg, test_qiimecustom, apollo, ipop_up, vsc_calcua, test_fasta, pdc_kth, ceci_nic5, ccga_cau, humantechnopole, stjude, daisybio, test_iontorrent, eddie, medair, biowulf, apptainer, bi, bigpurple, adcra, test_novaseq, cedars, pawsey_setonix, vsc_kul_uhasselt, pawsey_nimbus, rki, ucl_myriad, utd_ganymede, charliecloud, fred_hutch, test_multi, seattlechildrens, icr_davros, ceres, munin, rosalind, hasta, cfc, emulate_amd64, uzh, test_multiregion, shu_bmrc, ebi_codon_slurm, ebc, ccga_dx, crick, ku_sund_danhead, marvin, lrz_cm4, shifter, biohpc_gen, mana, mamba, york_viking, unc_lccc, wehi, awsbatch, wustl_htcf, arcc, ceci_dragon2, imperial, maestro, software_license, cannon, genotoul, nci_gadi, abims, eva_grace, janelia, nu_genomics, googlebatch, oist, sahmri, kaust, test_reftaxcustom, alliance_canada, arm64, mpcdf, leicester, vsc_ugent, create, sage, cambridge, test_single, jex, podman, ebi_codon, cheaha, xanadu, nyu_hpc, test, marjorie, test_pplace, computerome, ucd_sonic, gpu, seg_globe, mssm, sanger, dkfz, bluebear, pasteur, einstein, ethz_euler, m3c, test_full, imb, ucl_cscluster, tuos_stanage, azurebatch, seadragon, crukmi, csiro_petrichor, qmul_apocrita, wave, docker, engaging, gis, hypatia, psmn, eva, unity, cropdiversityhpc, nygc, fgcz, conda, crg, singularity, mpcdf_viper, dirac, self_hosted_runner, tufts, uw_hyak_pedslabs, binac2, debug, hki_genie, genouest, cbe, unsw_katana, utd_juno, test_failed, phoenix, seawulf, uod_hpc, fub_curta, lovelace, uct_hpc, aws_tower, fsu_draco, binac]
+Mar-19 14:33:55.896 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins declared=[nf-schema@2.5.1]
+Mar-19 14:33:55.897 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Mar-19 14:33:55.897 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[nf-schema@2.5.1]
+Mar-19 14:33:56.525 [main] DEBUG n.plugin.HttpPluginRepository - Registry request: https://registry.nextflow.io/api/v1/plugins/dependencies?plugins=nf-schema%402.5.1&nextflowVersion=25.10.4
+- code: 200
+- body: {"plugins":[{"id":"nf-schema","releases":[{"version":"2.5.1","url":"https://registry.nextflow.io/api/v1/plugins/nf-schema/2.5.1/download/nf-schema-2.5.1.zip","date":"2025-09-02T14:48:39.714892Z","sha512sum":"82c9c17a9f77319386e670e7b52cf79b067320001f083ccdfec77dada9fd53499506200fd10b493cf8f6fc0420f42e2314481c353ca14b3a92f354bf07ad5c13","requires":">=25.04.0","dependsOn":[],"status":"PUBLISHED"}],"projectUrl":"https://github.com/nextflow-io/nf-schema","provider":"nextflow-io"}]}
+Mar-19 14:33:56.567 [main] DEBUG nextflow.plugin.PluginUpdater - Installing plugin nf-schema version: 2.5.1
+Mar-19 14:33:56.574 [main] INFO  org.pf4j.AbstractPluginManager - Plugin 'nf-schema@2.5.1' resolved
+Mar-19 14:33:56.575 [main] INFO  org.pf4j.AbstractPluginManager - Start plugin 'nf-schema@2.5.1'
+Mar-19 14:33:56.580 [main] DEBUG nextflow.plugin.BasePlugin - Plugin started nf-schema@2.5.1
+Mar-19 14:33:56.587 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /home/blackboy/.nextflow/secrets/store.json
+Mar-19 14:33:56.590 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1fd0ae78] - activable => nextflow.secret.LocalSecretsProvider@1fd0ae78
+Mar-19 14:33:56.591 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 by global default
+Mar-19 14:33:56.592 [main] DEBUG nextflow.cli.CmdRun - Launching `https://github.com/nf-core/ampliseq` [irreverent_poisson] DSL2 - revision: 7cf7ed2b2a [2.16.1]
+Mar-19 14:33:56.648 [main] DEBUG nextflow.Session - Session UUID: 96db9b86-0ec3-4269-a7d5-00a28dcbbcd4
+Mar-19 14:33:56.648 [main] DEBUG nextflow.Session - Run name: irreverent_poisson
+Mar-19 14:33:56.648 [main] DEBUG nextflow.Session - Executor pool size: 4
+Mar-19 14:33:56.656 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Mar-19 14:33:56.661 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-19 14:33:56.678 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.10.4 build 11173
+  Created: 10-02-2026 15:17 UTC (15:17 GMT)
+  System: Linux 5.15.153.1-microsoft-standard-WSL2
+  Runtime: Groovy 4.0.28 on OpenJDK 64-Bit Server VM 23.0.2-internal-adhoc.conda.src
+  Encoding: UTF-8 (UTF-8)
+  Process: 8075@LAPTOP-814NSMMO [127.0.1.1]
+  CPUs: 4 - Mem: 34.3 GB (30.1 GB) - Swap: 150 GB (150 GB)
+Mar-19 14:33:56.696 [main] DEBUG nextflow.Session - Work-dir: /home/blackboy/nf_amplicon_train/work [ext2/ext3]
+Mar-19 14:33:56.744 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Mar-19 14:33:56.757 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Mar-19 14:33:56.759 [main] DEBUG nextflow.Session - Observer factory (v2): DefaultObserverFactory
+Mar-19 14:33:56.781 [main] DEBUG nextflow.Session - Observer factory (v2): ValidationObserverFactory
+Mar-19 14:33:56.837 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Mar-19 14:33:56.847 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 5; maxThreads: 1000
+Mar-19 14:33:56.935 [main] DEBUG nextflow.Session - Session start
+Mar-19 14:33:56.941 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow started -- trace file: results/pipeline_info/execution_trace_2026-03-19_14-33-53.txt
+Mar-19 14:33:57.053 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Mar-19 14:34:02.742 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Mar-19 14:34:02.751 [main] DEBUG n.validation.config.ValidationConfig - Set `validation.monochromeLogs` to false
+Mar-19 14:34:02.753 [main] DEBUG n.validation.config.ValidationConfig - Added the following parameters to the ignored parameters: [genomes, igenomes_base, dada_ref_databases, qiime_ref_databases, sintax_ref_databases, kraken2_ref_databases, sidle_ref_databases]
+Mar-19 14:34:02.765 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Mar-19 14:34:02.766 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Mar-19 14:34:02.768 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Mar-19 14:34:02.768 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Mar-19 14:34:02.769 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Mar-19 14:34:04.099 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Mar-19 14:34:04.100 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Mar-19 14:34:04.353 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Mar-19 14:34:04.355 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Mar-19 14:34:04.355 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Mar-19 14:34:04.357 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Mar-19 14:34:04.358 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Mar-19 14:34:04.359 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Mar-19 14:34:04.501 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryLog:paramsSummaryLog]; plugin Id: nf-schema
+Mar-19 14:34:04.502 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [validateParameters:validateParameters]; plugin Id: nf-schema
+Mar-19 14:34:04.502 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Mar-19 14:34:04.504 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsSummaryMap:paramsSummaryMap]; plugin Id: nf-schema
+Mar-19 14:34:04.505 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [samplesheetToList:samplesheetToList]; plugin Id: nf-schema
+Mar-19 14:34:04.505 [main] DEBUG nextflow.script.IncludeDef - Loading included plugin extensions with names: [paramsHelp:paramsHelp]; plugin Id: nf-schema
+Mar-19 14:34:04.642 [main] INFO  nextflow.Nextflow - 
+-[2m----------------------------------------------------[0m-
+                                        [0;32m,--.[0;30m/[0;32m,-.[0m
+[0;34m        ___     __   __   __   ___     [0;32m/,-._.--~'[0m
+[0;34m  |\ | |__  __ /  ` /  \ |__) |__         [0;33m}  {[0m
+[0;34m  | \| |       \__, \__/ |  \ |___     [0;32m\`-._,-`-,[0m
+                                        [0;32m`._,._,'[0m
+[0;35m  nf-core/ampliseq 2.16.1[0m
+-[2m----------------------------------------------------[0m-
+
+Mar-19 14:34:04.687 [main] INFO  nextflow.Nextflow - [1mMain arguments[0m
+  [0;34minput              : [0;32msamplesheet.csv[0m
+  [0;34mFW_primer          : [0;32mGTGYCAGCMGCCGCGGTAA[0m
+  [0;34mRV_primer          : [0;32mGGACTACNVGGGTWTCTAAT[0m
+  [0;34moutdir             : [0;32mresults[0m
+
+[1mGeneric options[0m
+  [0;34mtrace_report_suffix: [0;32m2026-03-19_14-33-53[0m
+
+[1mCore Nextflow options[0m
+  [0;34mrevision           : [0;32m2.16.1[0m
+  [0;34mrunName            : [0;32mirreverent_poisson[0m
+  [0;34mcontainerEngine    : [0;32msingularity[0m
+  [0;34mlaunchDir          : [0;32m/home/blackboy/nf_amplicon_train[0m
+  [0;34mworkDir            : [0;32m/home/blackboy/nf_amplicon_train/work[0m
+  [0;34mprojectDir         : [0;32m/home/blackboy/.nextflow/assets/nf-core/ampliseq[0m
+  [0;34muserName           : [0;32mblackboy[0m
+  [0;34mprofile            : [0;32msingularity[0m
+  [0;34mconfigFiles        : [0;32m/home/blackboy/.nextflow/assets/nf-core/ampliseq/nextflow.config, /home/blackboy/nf_amplicon_train/config/custom.config[0m
+
+!! Only displaying parameters that differ from the pipeline defaults !!
+-[2m----------------------------------------------------[0m-
+Mar-19 14:34:04.688 [main] INFO  nextflow.Nextflow - 
+* The pipeline
+    https://doi.org/10.5281/zenodo.1493841
+    https://doi.org/10.3389/fmicb.2020.550420
+
+* The nf-core framework
+    https://doi.org/10.1038/s41587-020-0439-x
+
+* Software dependencies
+    https://github.com/nf-core/ampliseq/blob/master/CITATIONS.md
+
+Mar-19 14:34:04.699 [main] DEBUG n.v.parameters.ParameterValidator - Starting parameters validation
+Mar-19 14:34:04.864 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Started validating /home/blackboy/nf_amplicon_train/samplesheet.csv
+Mar-19 14:34:04.915 [main] DEBUG n.v.v.evaluators.SchemaEvaluator - Validation of file 'samplesheet.csv' passed!
+Mar-19 14:34:05.009 [main] DEBUG n.v.parameters.ParameterValidator - Finishing parameters validation
+Mar-19 14:34:05.047 [main] WARN  nextflow.Nextflow - No DADA2 read truncation cutoffs were specified (`--trunclenf` & `--trunclenr`), therefore reads will be truncated where median quality drops below 25 (defined by `--trunc_qmin`) but at least a fraction of 0.75 (defined by `--trunc_rmin`) of the reads will be retained.
+The chosen cutoffs do not account for required overlap for merging, therefore DADA2 might have poor merging efficiency or even fail.
+The cutoffs are chosen before any quality score-based read truncation (using `--truncq`) is performed.
+
+Mar-19 14:34:05.119 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:RENAME_RAW_DATA_FILES
+Mar-19 14:34:05.121 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:RENAME_RAW_DATA_FILES` matches process NFCORE_AMPLISEQ:AMPLISEQ:RENAME_RAW_DATA_FILES
+Mar-19 14:34:05.129 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.130 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.138 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Mar-19 14:34:05.143 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=4; memory=34.3 GB; capacity=4; pollInterval=100ms; dumpInterval=5m
+Mar-19 14:34:05.145 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Mar-19 14:34:05.163 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:RENAME_RAW_DATA_FILES': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.197 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_AMPLISEQ:AMPLISEQ:FASTQC
+Mar-19 14:34:05.198 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:FASTQC` matches process NFCORE_AMPLISEQ:AMPLISEQ:FASTQC
+Mar-19 14:34:05.205 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.205 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.206 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:FASTQC': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.213 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_BASIC
+Mar-19 14:34:05.216 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:CUTADAPT_BASIC` matches process NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_BASIC
+Mar-19 14:34:05.219 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_BASIC` matches process NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_BASIC
+Mar-19 14:34:05.221 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.221 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.222 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_BASIC': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.233 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_SUMMARY_STD
+Mar-19 14:34:05.241 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.241 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.242 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_SUMMARY_STD': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.246 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_SUMMARY_MERGE
+Mar-19 14:34:05.247 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:CUTADAPT_SUMMARY_MERGE` matches process NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_SUMMARY_MERGE
+Mar-19 14:34:05.251 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.251 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.252 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_SUMMARY_MERGE': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.276 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_QUALITY1
+Mar-19 14:34:05.279 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DADA2_QUALITY1` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_QUALITY1
+Mar-19 14:34:05.285 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.285 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.285 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_QUALITY1': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.293 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:TRUNCLEN
+Mar-19 14:34:05.294 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:TRUNCLEN` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:TRUNCLEN
+Mar-19 14:34:05.297 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.297 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.298 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:TRUNCLEN': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.319 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_FILTNTRIM
+Mar-19 14:34:05.321 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DADA2_FILTNTRIM` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_FILTNTRIM
+Mar-19 14:34:05.326 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.326 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.326 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_FILTNTRIM': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.359 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_QUALITY2
+Mar-19 14:34:05.368 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DADA2_QUALITY2` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_QUALITY2
+Mar-19 14:34:05.372 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.372 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.373 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_QUALITY2': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.397 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_ERR
+Mar-19 14:34:05.397 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DADA2_ERR` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_ERR
+Mar-19 14:34:05.400 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:NFCORE_AMPLISEQ:AMPLISEQ:DADA2_ERR` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_ERR
+Mar-19 14:34:05.403 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.404 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.405 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:DADA2_ERR': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.419 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_high` matches labels `process_high,process_long,error_retry` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_DENOISING
+Mar-19 14:34:05.419 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_long` matches labels `process_high,process_long,error_retry` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_DENOISING
+Mar-19 14:34:05.420 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:error_retry` matches labels `process_high,process_long,error_retry` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_DENOISING
+Mar-19 14:34:05.421 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DADA2_DENOISING` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_DENOISING
+Mar-19 14:34:05.423 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:NFCORE_AMPLISEQ:AMPLISEQ:DADA2_DENOISING` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_DENOISING
+Mar-19 14:34:05.425 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.425 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.425 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:DADA2_DENOISING': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.431 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_medium` matches labels `process_medium` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA
+Mar-19 14:34:05.432 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DADA2_RMCHIMERA` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA
+Mar-19 14:34:05.433 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA
+Mar-19 14:34:05.435 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.435 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.435 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.450 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_STATS
+Mar-19 14:34:05.451 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DADA2_STATS` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_STATS
+Mar-19 14:34:05.453 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:NFCORE_AMPLISEQ:AMPLISEQ:DADA2_STATS` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_STATS
+Mar-19 14:34:05.455 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.455 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.455 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:DADA2_STATS': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.464 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_MERGE
+Mar-19 14:34:05.465 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DADA2_MERGE` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_MERGE
+Mar-19 14:34:05.467 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.468 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.468 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:DADA2_MERGE': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.474 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:MERGE_STATS_STD
+Mar-19 14:34:05.476 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:MERGE_STATS_STD|MERGE_STATS_FILTERSSU|MERGE_STATS_FILTERTAXA|MERGE_STATS_CODONS` matches process NFCORE_AMPLISEQ:AMPLISEQ:MERGE_STATS_STD
+Mar-19 14:34:05.479 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.479 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.479 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:MERGE_STATS_STD': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.485 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_AMPLISEQ:AMPLISEQ:BARRNAP
+Mar-19 14:34:05.485 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:BARRNAP` matches process NFCORE_AMPLISEQ:AMPLISEQ:BARRNAP
+Mar-19 14:34:05.492 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.492 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.493 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:BARRNAP': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.499 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:BARRNAPSUMMARY
+Mar-19 14:34:05.501 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:BARRNAPSUMMARY` matches process NFCORE_AMPLISEQ:AMPLISEQ:BARRNAPSUMMARY
+Mar-19 14:34:05.504 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.505 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.505 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:BARRNAPSUMMARY': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.514 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:FORMAT_TAXONOMY
+Mar-19 14:34:05.515 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:FORMAT_TAXONOMY|FORMAT_TAXRESULTS` matches process NFCORE_AMPLISEQ:AMPLISEQ:FORMAT_TAXONOMY
+Mar-19 14:34:05.518 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.518 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.518 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:FORMAT_TAXONOMY': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.539 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_high` matches labels `process_high` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_TAXONOMY_WF:DADA2_TAXONOMY
+Mar-19 14:34:05.540 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DADA2_TAXONOMY` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_TAXONOMY_WF:DADA2_TAXONOMY
+Mar-19 14:34:05.543 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.543 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.543 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:DADA2_TAXONOMY_WF:DADA2_TAXONOMY': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.563 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_long` matches labels `process_cpu_single,process_medium_memory,process_long` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_TAXONOMY_WF:DADA2_ADDSPECIES
+Mar-19 14:34:05.563 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_cpu_single` matches labels `process_cpu_single,process_medium_memory,process_long` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_TAXONOMY_WF:DADA2_ADDSPECIES
+Mar-19 14:34:05.563 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_medium_memory` matches labels `process_cpu_single,process_medium_memory,process_long` for process with name NFCORE_AMPLISEQ:AMPLISEQ:DADA2_TAXONOMY_WF:DADA2_ADDSPECIES
+Mar-19 14:34:05.564 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:DADA2_ADDSPECIES` matches process NFCORE_AMPLISEQ:AMPLISEQ:DADA2_TAXONOMY_WF:DADA2_ADDSPECIES
+Mar-19 14:34:05.567 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.567 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.567 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:DADA2_TAXONOMY_WF:DADA2_ADDSPECIES': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.588 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_INASV
+Mar-19 14:34:05.589 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_INASV|QIIME2_INSEQ|QIIME2_INTAX|QIIME2_INTREE` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_INASV
+Mar-19 14:34:05.592 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.592 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.593 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_INASV': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.598 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_INSEQ
+Mar-19 14:34:05.599 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_INASV|QIIME2_INSEQ|QIIME2_INTAX|QIIME2_INTREE` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_INSEQ
+Mar-19 14:34:05.603 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.603 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.604 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_INSEQ': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.608 [main] INFO  nextflow.Nextflow - Use DADA2 taxonomy classification
+Mar-19 14:34:05.610 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_INTAX
+Mar-19 14:34:05.611 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_INASV|QIIME2_INSEQ|QIIME2_INTAX|QIIME2_INTREE` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_INTAX
+Mar-19 14:34:05.616 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.616 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.617 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_INTAX': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.621 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_TABLEFILTERTAXA
+Mar-19 14:34:05.622 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_TABLEFILTERTAXA|QIIME2_SEQFILTERTABLE` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_TABLEFILTERTAXA
+Mar-19 14:34:05.624 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.625 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.625 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_TABLEFILTERTAXA': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.630 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_SEQFILTERTABLE
+Mar-19 14:34:05.631 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_TABLEFILTERTAXA|QIIME2_SEQFILTERTABLE` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_SEQFILTERTABLE
+Mar-19 14:34:05.634 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.634 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.634 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_SEQFILTERTABLE': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.639 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:FILTER_STATS
+Mar-19 14:34:05.641 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:FILTER_STATS` matches process NFCORE_AMPLISEQ:AMPLISEQ:FILTER_STATS
+Mar-19 14:34:05.643 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.644 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.644 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:FILTER_STATS': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.649 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:MERGE_STATS_FILTERTAXA
+Mar-19 14:34:05.650 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:MERGE_STATS_STD|MERGE_STATS_FILTERSSU|MERGE_STATS_FILTERTAXA|MERGE_STATS_CODONS` matches process NFCORE_AMPLISEQ:AMPLISEQ:MERGE_STATS_FILTERTAXA
+Mar-19 14:34:05.653 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.653 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.653 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:MERGE_STATS_FILTERTAXA': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.662 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:QIIME2_EXPORT_ABSOLUTE
+Mar-19 14:34:05.664 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_EXPORT_ABSOLUTE` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:QIIME2_EXPORT_ABSOLUTE
+Mar-19 14:34:05.666 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.666 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.666 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:QIIME2_EXPORT_ABSOLUTE': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.674 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:QIIME2_EXPORT_RELASV
+Mar-19 14:34:05.676 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_EXPORT_RELASV|QIIME2_EXPORT_RELTAX|COMBINE_TABLE` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:QIIME2_EXPORT_RELASV
+Mar-19 14:34:05.682 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.682 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.682 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:QIIME2_EXPORT_RELASV': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.687 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:QIIME2_EXPORT_RELTAX
+Mar-19 14:34:05.688 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_EXPORT_RELASV|QIIME2_EXPORT_RELTAX|COMBINE_TABLE` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:QIIME2_EXPORT_RELTAX
+Mar-19 14:34:05.722 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.722 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.725 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:QIIME2_EXPORT_RELTAX': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.733 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_QIIME2
+Mar-19 14:34:05.735 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_EXPORT_RELASV|QIIME2_EXPORT_RELTAX|COMBINE_TABLE` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_QIIME2
+Mar-19 14:34:05.744 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.745 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.746 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_QIIME2': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.757 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_DADA2
+Mar-19 14:34:05.759 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_EXPORT_RELASV|QIIME2_EXPORT_RELTAX|COMBINE_TABLE` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_DADA2
+Mar-19 14:34:05.763 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.763 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.763 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_DADA2': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.769 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_PPLACE
+Mar-19 14:34:05.770 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_EXPORT_RELASV|QIIME2_EXPORT_RELTAX|COMBINE_TABLE` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_PPLACE
+Mar-19 14:34:05.778 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.778 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.779 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_PPLACE': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.792 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_SINTAX
+Mar-19 14:34:05.793 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_EXPORT_RELASV|QIIME2_EXPORT_RELTAX|COMBINE_TABLE` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_SINTAX
+Mar-19 14:34:05.797 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.798 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.798 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_SINTAX': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.812 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_BARPLOT
+Mar-19 14:34:05.813 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:QIIME2_BARPLOT` matches process NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_BARPLOT
+Mar-19 14:34:05.816 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.816 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.816 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_BARPLOT': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.824 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:METADATA_ALL
+Mar-19 14:34:05.828 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.828 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.829 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:METADATA_ALL': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.843 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:METADATA_PAIRWISE
+Mar-19 14:34:05.848 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.848 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.849 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:METADATA_PAIRWISE': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.862 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:ROBJECT_WORKFLOW:PHYLOSEQ_INASV
+Mar-19 14:34:05.866 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.866 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.867 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:ROBJECT_WORKFLOW:PHYLOSEQ_INASV': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.888 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_AMPLISEQ:AMPLISEQ:ROBJECT_WORKFLOW:PHYLOSEQ
+Mar-19 14:34:05.890 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:PHYLOSEQ` matches process NFCORE_AMPLISEQ:AMPLISEQ:ROBJECT_WORKFLOW:PHYLOSEQ
+Mar-19 14:34:05.892 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.892 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.893 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:ROBJECT_WORKFLOW:PHYLOSEQ': maxForks=0; fair=false; array=0
+Mar-19 14:34:05.898 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_AMPLISEQ:AMPLISEQ:ROBJECT_WORKFLOW:TREESUMMARIZEDEXPERIMENT
+Mar-19 14:34:05.900 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:TREESUMMARIZEDEXPERIMENT` matches process NFCORE_AMPLISEQ:AMPLISEQ:ROBJECT_WORKFLOW:TREESUMMARIZEDEXPERIMENT
+Mar-19 14:34:05.902 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:05.902 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:05.903 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:ROBJECT_WORKFLOW:TREESUMMARIZEDEXPERIMENT': maxForks=0; fair=false; array=0
+Mar-19 14:34:06.020 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_single` matches labels `process_single` for process with name NFCORE_AMPLISEQ:AMPLISEQ:MULTIQC
+Mar-19 14:34:06.021 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:MULTIQC` matches process NFCORE_AMPLISEQ:AMPLISEQ:MULTIQC
+Mar-19 14:34:06.024 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:06.024 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:06.025 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:MULTIQC': maxForks=0; fair=false; array=0
+Mar-19 14:34:06.095 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withLabel:process_low` matches labels `process_low` for process with name NFCORE_AMPLISEQ:AMPLISEQ:SUMMARY_REPORT
+Mar-19 14:34:06.096 [main] DEBUG n.script.dsl.ProcessConfigBuilder - Config settings `withName:SUMMARY_REPORT` matches process NFCORE_AMPLISEQ:AMPLISEQ:SUMMARY_REPORT
+Mar-19 14:34:06.099 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Mar-19 14:34:06.099 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Mar-19 14:34:06.100 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'NFCORE_AMPLISEQ:AMPLISEQ:SUMMARY_REPORT': maxForks=0; fair=false; array=0
+Mar-19 14:34:06.139 [main] DEBUG nextflow.Session - Config process names validation disabled as requested
+Mar-19 14:34:06.143 [main] DEBUG nextflow.Session - Igniting dataflow network (78)
+Mar-19 14:34:06.150 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:RENAME_RAW_DATA_FILES
+Mar-19 14:34:06.150 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:FASTQC
+Mar-19 14:34:06.155 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_BASIC
+Mar-19 14:34:06.155 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_SUMMARY_STD
+Mar-19 14:34:06.156 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_SUMMARY_MERGE
+Mar-19 14:34:06.157 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_QUALITY1
+Mar-19 14:34:06.157 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:TRUNCLEN
+Mar-19 14:34:06.164 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_FILTNTRIM
+Mar-19 14:34:06.164 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_QUALITY2
+Mar-19 14:34:06.164 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_ERR
+Mar-19 14:34:06.164 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_DENOISING
+Mar-19 14:34:06.164 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA
+Mar-19 14:34:06.164 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_STATS
+Mar-19 14:34:06.164 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_MERGE
+Mar-19 14:34:06.164 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:MERGE_STATS_STD
+Mar-19 14:34:06.164 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:BARRNAP
+Mar-19 14:34:06.164 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:BARRNAPSUMMARY
+Mar-19 14:34:06.164 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:FORMAT_TAXONOMY
+Mar-19 14:34:06.165 [Actor Thread 7] DEBUG nextflow.splitter.AbstractSplitter - Creating gzip splitter for: /home/blackboy/nf_amplicon_train/data/sample1_R1.fastq.gz
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_TAXONOMY_WF:DADA2_TAXONOMY
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_TAXONOMY_WF:DADA2_ADDSPECIES
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_INASV
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_INSEQ
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_INTAX
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_TABLEFILTERTAXA
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_SEQFILTERTABLE
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:FILTER_STATS
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:MERGE_STATS_FILTERTAXA
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:QIIME2_EXPORT_ABSOLUTE
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:QIIME2_EXPORT_RELASV
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:QIIME2_EXPORT_RELTAX
+Mar-19 14:34:06.199 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_QIIME2
+Mar-19 14:34:06.200 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_DADA2
+Mar-19 14:34:06.200 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_PPLACE
+Mar-19 14:34:06.200 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_EXPORT:COMBINE_TABLE_SINTAX
+Mar-19 14:34:06.200 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:QIIME2_BARPLOT
+Mar-19 14:34:06.200 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:METADATA_ALL
+Mar-19 14:34:06.200 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:METADATA_PAIRWISE
+Mar-19 14:34:06.200 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:ROBJECT_WORKFLOW:PHYLOSEQ_INASV
+Mar-19 14:34:06.200 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:ROBJECT_WORKFLOW:PHYLOSEQ
+Mar-19 14:34:06.200 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:ROBJECT_WORKFLOW:TREESUMMARIZEDEXPERIMENT
+Mar-19 14:34:06.250 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:MULTIQC
+Mar-19 14:34:06.250 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > NFCORE_AMPLISEQ:AMPLISEQ:SUMMARY_REPORT
+Mar-19 14:34:06.255 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_4f8cf233233d23c3: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/merge_stats.nf
+  Script_bc3bbaa98c29cd88: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_alphararefaction.nf
+  Script_508be0dd3bef894f: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_ancom_tax.nf
+  Script_bf77ef10c65da642: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/format_taxresults.nf
+  Script_9b0a1b20da1d20c4: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_inasv.nf
+  Script_99f4a19db53248c6: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/format_pplacetax.nf
+  Script_76406376b51a847a: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/format_taxonomy_sidle.nf
+  Script_300211ad9b708fd9: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_intax.nf
+  Script_2c1b2dc52963abcb: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/gappa/examineheattree/main.nf
+  Script_9c384b7a7a2c371b: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/dada2_filtntrim.nf
+  Script_b0804776c9105fd7: /home/blackboy/.nextflow/assets/nf-core/ampliseq/main.nf
+  Script_4d8a2b39c9cc9a6d: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/picrust.nf
+  Script_4a2c346f0b0fc16c: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_extract.nf
+  Script_47f8675fd6094a75: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_classify.nf
+  Script_85aa5c6b9071be8a: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/novaseq_err.nf
+  Script_5728a7f2ab86dd3d: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_indbaligned.nf
+  Script_64c744252891fb9e: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/format_taxresults_sintax.nf
+  Script_c47548b01279e0f0: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/dada2_stats.nf
+  Script_f76783d28b95f648: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_filtersamples.nf
+  Script_1b43d499b898cfa7: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_trim.nf
+  Script_d0c13235b5896157: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_seqfiltertable.nf
+  Script_1831c72c96b04171: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/multiqc/main.nf
+  Script_49004cf7d29b4bab: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/filter_stats.nf
+  Script_7d6dde484d205a2d: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/qiime2_taxonomy.nf
+  Script_228e0b0da35d060c: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/qiime2_diversity.nf
+  Script_ff881218dc6351ec: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/epang/place/main.nf
+  Script_d3cbe6d99d517b8d: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_dbfilt.nf
+  Script_b302186aa6b27ab8: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/phyloseq.nf
+  Script_f9e664471dc80ea2: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_ancombc_tax.nf
+  Script_fc513967fc9a96e8: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_diversity_alpha.nf
+  Script_73491ec729f4c912: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/pigz/uncompress/main.nf
+  Script_8019070522e45584: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_featuretable_group.nf
+  Script_8ebbbd36dc4caf7a: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/barrnapsummary.nf
+  Script_a4b36221049dbde3: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_train.nf
+  Script_b49a43434ff978bf: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/cutadapt_summary_merge.nf
+  Script_863a467b5a6ff451: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_ancombc_asv.nf
+  Script_5b66c06c239c48ff: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_export_reltax.nf
+  Script_f79e4bce0727cd4b: /home/blackboy/.nextflow/assets/nf-core/ampliseq/workflows/ampliseq.nf
+  Script_1694e4a65ca5518a: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/dada2_rmchimera.nf
+  Script_4ef483a6a9583cc3: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/vsearch/usearchglobal/main.nf
+  Script_f629bf2963ab1e03: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/format_taxresults_kraken2.nf
+  Script_995a7cb3ac639633: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/hmmer/eslalimask/main.nf
+  Script_2f1c78505d59df5a: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/filter_ssu.nf
+  Script_47842160b7b99eb1: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_tablerecon.nf
+  Script_3f06e6c7c5e7198f: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/epang/split/main.nf
+  Script_4981bbee7e0099e5: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/metadata_all.nf
+  Script_f96a6deb2024ac41: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/metadata_pairwise.nf
+  Script_7720afc87cec4d4e: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/gappa/examineassign/main.nf
+  Script_098eb9992da548f7: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_seqrecon.nf
+  Script_5977f542cd315b9b: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/nf-core/utils_nfcore_pipeline/main.nf
+  Script_ba980db41ed60985: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/combine_table.nf
+  Script_0d07963c09038466: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_in.nf
+  Script_4d531acfbffc0765: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/dada2_splitregions.nf
+  Script_c5a8ec64ce1385b1: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/sintax_taxonomy_wf.nf
+  Script_ce457b0b8f5ef6d1: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/filter_codons.nf
+  Script_2d9712539189db24: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/dada2_denoising.nf
+  Script_9a50e1fc1c00f860: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/parse_input.nf
+  Script_1a2037a6183f7e1a: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/nf-core/utils_nfschema_plugin/main.nf
+  Script_ddd2e81d7efb7957: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/format_fastainput.nf
+  Script_34cc1658fe416075: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/qiime2_preptax.nf
+  Script_dff8f6deff0539ca: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_diversity_betaord.nf
+  Script_bd93eb1c34b0787e: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/hmmer/hmmbuild/main.nf
+  Script_b55f4cb7f72f6e84: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_dbextract.nf
+  Script_e33e48627be32b95: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/qiime2_ancom.nf
+  Script_8a3b7dd393be03f2: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/dada2_merge.nf
+  Script_fb7abc633ae4f71d: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/kraken2_taxonomy_wf.nf
+  Script_f1c1a3a01d4cb7f6: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/dada2_taxonomy_wf.nf
+  Script_2d3ab460e8d6253c: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_ancom_asv.nf
+  Script_8a4c27686d608680: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/cutadapt/main.nf
+  Script_32b81b7e30be440b: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/cutadapt_summary.nf
+  Script_bc88132e37d07029: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sbdiexportreannotate.nf
+  Script_75212c76c31ef627: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_treerecon.nf
+  Script_58823f8e3714da5e: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/format_taxonomy_sintax.nf
+  Script_040c4ee9cc442f19: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/utils_nfcore_ampliseq_pipeline/main.nf
+  Script_384ca223b899e01e: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_export_absolute.nf
+  Script_bc5db0212ed50f6d: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/summary_report.nf
+  Script_df54fe6a0a83a45d: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/hmmer/hmmalign/main.nf
+  Script_6ee2ff9489370efb: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/itsx_cutasv.nf
+  Script_2a3123de5fac596c: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/untar/main.nf
+  Script_98b101fc916b1c80: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/qiime2_barplotavg.nf
+  Script_eb05841b1ab8634b: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_export_relasv.nf
+  Script_1f5a728d19ac4da9: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/dada2_err.nf
+  Script_84e206d69bd36af6: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_align.nf
+  Script_6a76a26f1f04a468: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_intree.nf
+  Script_6dafa4c781a67db1: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/dada2_preprocessing.nf
+  Script_4669770b29e6c14b: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/trunclen.nf
+  Script_891440a68088119a: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/vsearch/sintax/main.nf
+  Script_b5bf9d3c865df99b: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sbdiexport.nf
+  Script_957899d4a9d3d527: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_dbrecon.nf
+  Script_47fc8ea1c0f8cd57: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/kraken2/kraken2/main.nf
+  Script_5c0d371fece2e5a0: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/fastqc/main.nf
+  Script_50408b974549460e: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_taxrecon.nf
+  Script_0e342fee802747c3: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/barrnap.nf
+  Script_d9e1042f97123f7b: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/vsearch/cluster/main.nf
+  Script_cf83a336543bb451: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_barplot.nf
+  Script_0f054529279c2e32: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_inseq.nf
+  Script_231cff1609e49176: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/phyloseq_inasv.nf
+  Script_7780b14094823a21: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/hmmer/eslreformat/main.nf
+  Script_0a51edca58199868: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/filter_len.nf
+  Script_2154cc056bdab789: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/phyloseq_intax.nf
+  Script_006e4bdaeaccc2ff: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/treesummarizedexperiment.nf
+  Script_5e79d823d74f0a9e: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_tree.nf
+  Script_b716e013842eda1e: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_diversity_adonis.nf
+  Script_c3e1db1b7fe11e40: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/format_taxonomy_qiime.nf
+  Script_b92f233e02d378cc: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/dada2_taxonomy.nf
+  Script_c5280cc4f361f532: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_diversity_beta.nf
+  Script_a8634b0660c590f1: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/robject_workflow.nf
+  Script_26561003d0061762: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/gappa/examinegraft/main.nf
+  Script_4f612cfd8c52e8cd: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/nf-core/utils_nextflow_pipeline/main.nf
+  Script_eedf3ffdef48e948: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_filttax.nf
+  Script_0783aa0594ef94dc: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/cutadapt_workflow.nf
+  Script_8fe478f54e9c597b: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/nf-core/fasta_newick_epang_gappa/main.nf
+  Script_71a1dc9f9fa18a37: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_tablefiltertaxa.nf
+  Script_491e3caf4fccbe68: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/sidle_wf.nf
+  Script_0077c5715e3d8e56: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/dada2_quality.nf
+  Script_930373cbd2f4527e: /home/blackboy/.nextflow/assets/nf-core/ampliseq/subworkflows/local/qiime2_export.nf
+  Script_a02133c5331ce322: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/rename_raw_data_files.nf
+  Script_ed537b681401e62e: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/format_taxonomy.nf
+  Script_d5743d9f9c91f4e1: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/assignsh.nf
+  Script_dca1ba46f91825fe: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/dada2_addspecies.nf
+  Script_8d4f77791c3c6091: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/sidle_indb.nf
+  Script_49a7958fe52c520a: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/qiime2_diversity_core.nf
+  Script_b7acbd417602eae4: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/nf-core/mafft/main.nf
+  Script_f22b3a70bda4ac4c: /home/blackboy/.nextflow/assets/nf-core/ampliseq/modules/local/filter_clusters.nf
+Mar-19 14:34:06.256 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Mar-19 14:34:06.256 [main] DEBUG nextflow.Session - Session await
+Mar-19 14:34:06.394 [Actor Thread 22] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.011 s; external sort time: 0.015 s; total time: 0.026 s
+Mar-19 14:34:06.395 [Actor Thread 22] DEBUG nextflow.file.FileCollector - >> temp file exists? false
+Mar-19 14:34:06.395 [Actor Thread 24] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 1; slices: 1; internal sort time: 0.001 s; external sort time: 0.025 s; total time: 0.026 s
+Mar-19 14:34:06.395 [Actor Thread 24] DEBUG nextflow.file.FileCollector - >> temp file exists? false
+Mar-19 14:34:06.395 [Actor Thread 24] DEBUG nextflow.file.FileCollector - Missed collect-file cache -- cause: java.nio.file.NoSuchFileException: /home/blackboy/nf_amplicon_train/work/collect-file/33946ad34f319b9b1ab852d3a64edefe
+Mar-19 14:34:06.396 [Actor Thread 22] DEBUG nextflow.file.FileCollector - Missed collect-file cache -- cause: java.nio.file.NoSuchFileException: /home/blackboy/nf_amplicon_train/work/collect-file/21284d53ac50cb333b95a2dde781ad2e
+Mar-19 14:34:06.403 [Actor Thread 24] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /home/blackboy/nf_amplicon_train/work/collect-file/33946ad34f319b9b1ab852d3a64edefe
+Mar-19 14:34:06.403 [Actor Thread 22] DEBUG nextflow.file.FileCollector - Saved collect-files list to: /home/blackboy/nf_amplicon_train/work/collect-file/21284d53ac50cb333b95a2dde781ad2e
+Mar-19 14:34:06.416 [Actor Thread 24] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-8594196261824385015
+Mar-19 14:34:06.420 [Actor Thread 22] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-4333416974704037623
+Mar-19 14:34:06.443 [Actor Thread 7] DEBUG nextflow.splitter.AbstractSplitter - Creating gzip splitter for: /home/blackboy/nf_amplicon_train/data/sample1_R2.fastq.gz
+Mar-19 14:34:06.567 [Actor Thread 7] DEBUG nextflow.splitter.AbstractSplitter - Creating gzip splitter for: /home/blackboy/nf_amplicon_train/data/sample2_R1.fastq.gz
+Mar-19 14:34:06.608 [Actor Thread 22] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/ubuntu:20.04; path=/home/blackboy/nf_amplicon_train/work/singularity/depot.galaxyproject.org-singularity-ubuntu-20.04.img
+Mar-19 14:34:06.649 [Actor Thread 7] DEBUG nextflow.splitter.AbstractSplitter - Creating gzip splitter for: /home/blackboy/nf_amplicon_train/data/sample2_R2.fastq.gz
+Mar-19 14:34:06.656 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [6e/11e724] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:RENAME_RAW_DATA_FILES (SAMPLE1_PE)
+Mar-19 14:34:06.701 [Actor Thread 27] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/cutadapt:5.2--py311haab0aaa_0; path=/home/blackboy/nf_amplicon_train/work/singularity/depot.galaxyproject.org-singularity-cutadapt-5.2--py311haab0aaa_0.img
+Mar-19 14:34:06.709 [Actor Thread 27] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/fastqc:0.12.1--hdfd78af_0; path=/home/blackboy/nf_amplicon_train/work/singularity/depot.galaxyproject.org-singularity-fastqc-0.12.1--hdfd78af_0.img
+Mar-19 14:34:06.716 [Actor Thread 23] INFO  nextflow.processor.TaskProcessor - [bf/a05ccc] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:RENAME_RAW_DATA_FILES (SAMPLE2_PE)
+Mar-19 14:34:06.731 [Actor Thread 10] INFO  nextflow.processor.TaskProcessor - [44/c81c4e] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:FASTQC (SAMPLE2_PE)
+Mar-19 14:34:06.733 [Actor Thread 11] INFO  nextflow.processor.TaskProcessor - [49/754223] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_BASIC (SAMPLE2_PE)
+Mar-19 14:34:06.735 [Actor Thread 24] DEBUG nextflow.splitter.AbstractSplitter - Creating gzip splitter for: /home/blackboy/nf_amplicon_train/work/49/754223a25a6dad915c593a94205e5c/SAMPLE2_PE.trimmed_1.trim.fastq.gz
+Mar-19 14:34:06.735 [Actor Thread 29] INFO  nextflow.processor.TaskProcessor - [d0/32425c] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:FASTQC (SAMPLE1_PE)
+Mar-19 14:34:06.735 [Actor Thread 24] DEBUG nextflow.splitter.AbstractSplitter - Creating gzip splitter for: /home/blackboy/nf_amplicon_train/work/49/754223a25a6dad915c593a94205e5c/SAMPLE2_PE.trimmed_2.trim.fastq.gz
+Mar-19 14:34:06.743 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [b6/5056b9] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_BASIC (SAMPLE1_PE)
+Mar-19 14:34:06.748 [Actor Thread 28] DEBUG nextflow.splitter.AbstractSplitter - Creating gzip splitter for: /home/blackboy/nf_amplicon_train/work/b6/5056b9bf0507b6063aae0b8a5f63a5/SAMPLE1_PE.trimmed_1.trim.fastq.gz
+Mar-19 14:34:06.749 [Actor Thread 28] DEBUG nextflow.splitter.AbstractSplitter - Creating gzip splitter for: /home/blackboy/nf_amplicon_train/work/b6/5056b9bf0507b6063aae0b8a5f63a5/SAMPLE1_PE.trimmed_2.trim.fastq.gz
+Mar-19 14:34:06.757 [Actor Thread 10] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-19 14:34:06.783 [Actor Thread 25] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/bioconductor-dada2:1.34.0--r44he5774e6_2; path=/home/blackboy/nf_amplicon_train/work/singularity/depot.galaxyproject.org-singularity-bioconductor-dada2-1.34.0--r44he5774e6_2.img
+Mar-19 14:34:06.791 [Actor Thread 21] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/python:3.8.3; path=/home/blackboy/nf_amplicon_train/work/singularity/depot.galaxyproject.org-singularity-python-3.8.3.img
+Mar-19 14:34:06.800 [Actor Thread 5] INFO  nextflow.processor.TaskProcessor - [26/5c2913] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_QUALITY1 (FW)
+Mar-19 14:34:06.811 [Actor Thread 20] DEBUG nextflow.util.HashBuilder - Hash asset file sha-256: /home/blackboy/.nextflow/assets/nf-core/ampliseq/bin/cutadapt_summary.py
+Mar-19 14:34:06.817 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [48/fbbbfd] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_SUMMARY_STD (cutadapt_standard)
+Mar-19 14:34:06.818 [Actor Thread 21] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://depot.galaxyproject.org/singularity/pandas:1.1.5; path=/home/blackboy/nf_amplicon_train/work/singularity/depot.galaxyproject.org-singularity-pandas-1.1.5.img
+Mar-19 14:34:06.818 [Actor Thread 8] INFO  nextflow.processor.TaskProcessor - [53/1f53a0] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_QUALITY1 (RV)
+Mar-19 14:34:06.820 [Actor Thread 22] DEBUG nextflow.util.HashBuilder - Hash asset file sha-256: /home/blackboy/.nextflow/assets/nf-core/ampliseq/bin/trunclen.py
+Mar-19 14:34:06.833 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [0b/a25cdc] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:TRUNCLEN (FW)
+Mar-19 14:34:06.838 [Actor Thread 1] DEBUG n.processor.TaskFileCollector - Process `NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_SUMMARY_MERGE (1)` is unable to find [UnixPath]: `/home/blackboy/nf_amplicon_train/work/32/4d4930110f1aefbf152bd718339c9c/versions.yml` (pattern: `versions.yml`)
+Mar-19 14:34:06.838 [Actor Thread 1] INFO  nextflow.processor.TaskProcessor - [32/4d4930] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_SUMMARY_MERGE (cutadapt_standard_summary.tsv)
+Mar-19 14:34:06.845 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [f1/5fefcc] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:TRUNCLEN (RV)
+Mar-19 14:34:06.855 [Actor Thread 22] WARN  nextflow.Nextflow - Probably everything is fine, but this is a reminder that `--trunclenf` was set automatically to 297 and `--trunclenr` to 270. If this doesnt seem reasonable, then please change `--trunc_qmin` (and `--trunc_rmin`), or set `--trunclenf` and `--trunclenr` directly.
+Mar-19 14:34:06.881 [Actor Thread 22] INFO  nextflow.processor.TaskProcessor - [9d/80d5db] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_FILTNTRIM (SAMPLE2_PE)
+Mar-19 14:34:06.881 [Actor Thread 21] INFO  nextflow.processor.TaskProcessor - [10/2f2c10] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_FILTNTRIM (SAMPLE1_PE)
+Mar-19 14:34:06.884 [Actor Thread 8] DEBUG nextflow.splitter.AbstractSplitter - Creating gzip splitter for: /home/blackboy/nf_amplicon_train/work/9d/80d5dba430c36898b276852123203a/SAMPLE2_PE_1.filt.fastq.gz
+Mar-19 14:34:06.885 [Actor Thread 8] DEBUG nextflow.splitter.AbstractSplitter - Creating gzip splitter for: /home/blackboy/nf_amplicon_train/work/9d/80d5dba430c36898b276852123203a/SAMPLE2_PE_2.filt.fastq.gz
+Mar-19 14:34:06.888 [Actor Thread 8] DEBUG nextflow.splitter.AbstractSplitter - Creating gzip splitter for: /home/blackboy/nf_amplicon_train/work/10/2f2c109ff3e3463b089ffc23e79ce4/SAMPLE1_PE_1.filt.fastq.gz
+Mar-19 14:34:06.889 [Actor Thread 8] DEBUG nextflow.splitter.AbstractSplitter - Creating gzip splitter for: /home/blackboy/nf_amplicon_train/work/10/2f2c109ff3e3463b089ffc23e79ce4/SAMPLE1_PE_2.filt.fastq.gz
+Mar-19 14:34:06.906 [Actor Thread 20] INFO  nextflow.processor.TaskProcessor - [e9/a6d201] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_QUALITY2 (FW)
+Mar-19 14:34:06.912 [Actor Thread 7] INFO  nextflow.processor.TaskProcessor - [8a/2bae4b] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_PREPROCESSING:DADA2_QUALITY2 (RV)
+Mar-19 14:34:06.935 [Actor Thread 26] INFO  nextflow.processor.TaskProcessor - [a5/1db4ba] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_ERR (1)
+Mar-19 14:34:06.977 [Actor Thread 14] INFO  nextflow.processor.TaskProcessor - [42/c93baa] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_DENOISING (1)
+Mar-19 14:34:06.986 [Actor Thread 1] DEBUG nextflow.processor.TaskProcessor - Process NFCORE_AMPLISEQ:AMPLISEQ:CUTADAPT_WORKFLOW:CUTADAPT_SUMMARY_MERGE > Skipping output binding because one or more optional files are missing: fileoutparam<1>
+Mar-19 14:34:07.036 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Mar-19 14:34:07.038 [Task submitter] INFO  nextflow.Session - [f5/a9c05e] Submitted process > NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA (1)
+Mar-19 14:34:13.046 [FileTransfer-1] DEBUG nextflow.file.FilePorter - Local cache found for foreign file https://zenodo.org/records/14169026/files/silva_nr99_v138.2_toSpecies_trainset.fa.gz at /home/blackboy/nf_amplicon_train/work/stage-96db9b86-0ec3-4269-a7d5-00a28dcbbcd4/da/191c65b5580b0995812619b4c86133/silva_nr99_v138.2_toSpecies_trainset.fa.gz
+Mar-19 14:34:13.046 [FileTransfer-2] DEBUG nextflow.file.FilePorter - Local cache found for foreign file https://zenodo.org/records/14169026/files/silva_v138.2_assignSpecies.fa.gz at /home/blackboy/nf_amplicon_train/work/stage-96db9b86-0ec3-4269-a7d5-00a28dcbbcd4/32/ccb8ddc612d5cdf9cb91d689499722/silva_v138.2_assignSpecies.fa.gz
+Mar-19 14:34:13.050 [Actor Thread 14] DEBUG nextflow.container.SingularityCache - Singularity found local store for image=https://containers.biocontainers.pro/s3/SingImgsRepo/biocontainers/v1.2.0_cv1/biocontainers_v1.2.0_cv1.img; path=/home/blackboy/nf_amplicon_train/work/singularity/containers.biocontainers.pro-s3-SingImgsRepo-biocontainers-v1.2.0_cv1-biocontainers_v1.2.0_cv1.img.img
+Mar-19 14:34:13.893 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 20; name: NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA (1); status: COMPLETED; exit: 1; error: -; workDir: /home/blackboy/nf_amplicon_train/work/f5/a9c05ec07f44cc34975adabdd8d4f0]
+Mar-19 14:34:13.894 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'TaskFinalizer' minSize=10; maxSize=12; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Mar-19 14:34:13.900 [TaskFinalizer-1] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA (1); work-dir=/home/blackboy/nf_amplicon_train/work/f5/a9c05ec07f44cc34975adabdd8d4f0
+  error [nextflow.exception.ProcessFailedException]: Process `NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA (1)` terminated with an error exit status (1)
+Mar-19 14:34:13.916 [TaskFinalizer-1] ERROR nextflow.processor.TaskProcessor - Error executing process > 'NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA (1)'
+
+Caused by:
+  Process `NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA (1)` terminated with an error exit status (1)
+
+
+Command executed:
+
+  #!/usr/bin/env Rscript
+  suppressPackageStartupMessages(library(dada2))
+  
+  seqtab = readRDS("1.seqtab.rds")
+  
+  #remove chimera
+  seqtab.nochim <- removeBimeraDenovo(seqtab, method="consensus", minSampleFraction = 0.9, ignoreNNegatives = 1, minFoldParentOverAbundance = 2, minParentAbundance = 8, allowOneOff = FALSE, minOneOffParentDistance = 4, maxShift = 16, multithread=4, verbose=TRUE)
+  if ( 2 == 1 ) { rownames(seqtab.nochim) <- "SAMPLE1_PE" }
+  saveRDS(seqtab.nochim,"1.ASVtable.rds")
+  
+  write.table('removeBimeraDenovo	method="consensus", minSampleFraction = 0.9, ignoreNNegatives = 1, minFoldParentOverAbundance = 2, minParentAbundance = 8, allowOneOff = FALSE, minOneOffParentDistance = 4, maxShift = 16', file = "removeBimeraDenovo.args.txt", row.names = FALSE, col.names = FALSE, quote = FALSE, na = '')
+  writeLines(c("\"NFCORE_AMPLISEQ:AMPLISEQ:DADA2_RMCHIMERA\":", paste0("    R: ", paste0(R.Version()[c("major","minor")], collapse = ".")),paste0("    dada2: ", packageVersion("dada2")) ), "versions.yml")
+
+Command exit status:
+  1
+
+Command output:
+  (empty)
+
+Command error:
+  Error in isBimeraDenovoTable(unqs[[i]], ..., verbose = verbose) : 
+    Input must be a valid sequence table.
+  Calls: removeBimeraDenovo -> isBimeraDenovoTable
+  Execution halted
+
+Work dir:
+  /home/blackboy/nf_amplicon_train/work/f5/a9c05ec07f44cc34975adabdd8d4f0
+
+Container:
+  /home/blackboy/nf_amplicon_train/work/singularity/depot.galaxyproject.org-singularity-bioconductor-dada2-1.34.0--r44he5774e6_2.img
+
+Tip: when you have fixed the problem you can continue the execution adding the option `-resume` to the run command line
+Mar-19 14:34:13.922 [Actor Thread 3] DEBUG nextflow.file.SortFileCollector - FileCollector temp dir not removed: null
+Mar-19 14:34:13.924 [TaskFinalizer-1] INFO  nextflow.Session - Execution cancelled -- Finishing pending tasks before exit
+Mar-19 14:34:13.927 [Actor Thread 9] DEBUG nextflow.file.SortFileCollector - FileCollector temp dir not removed: null
+Mar-19 14:34:13.938 [TaskFinalizer-1] ERROR nextflow.Nextflow - Pipeline failed. Please refer to troubleshooting docs: https://nf-co.re/docs/usage/troubleshooting
+Mar-19 14:34:13.939 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Mar-19 14:34:13.943 [Actor Thread 6] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_AMPLISEQ:AMPLISEQ:FORMAT_TAXONOMY; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Mar-19 14:34:13.943 [main] DEBUG nextflow.Session - Session await > all processes finished
+Mar-19 14:34:13.943 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Mar-19 14:34:13.950 [Actor Thread 25] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=NFCORE_AMPLISEQ:AMPLISEQ:MULTIQC; work-dir=null
+  error [java.lang.InterruptedException]: java.lang.InterruptedException
+Mar-19 14:34:13.957 [Actor Thread 12] INFO  nextflow.processor.TaskProcessor - [aa/9611b8] Cached process > NFCORE_AMPLISEQ:AMPLISEQ:FORMAT_TAXONOMY
+Mar-19 14:34:13.957 [Actor Thread 9] DEBUG nextflow.sort.BigSort - Sort completed -- entries: 11; slices: 1; internal sort time: 0.011 s; external sort time: 0.001 s; total time: 0.012 s
+Mar-19 14:34:13.957 [Actor Thread 9] DEBUG nextflow.file.FileCollector - >> temp file exists? true
+Mar-19 14:34:13.961 [Actor Thread 9] DEBUG nextflow.file.FileCollector - Retrieved cached collect-files from: /home/blackboy/nf_amplicon_train/work/collect-file/4897a5568388cf4d46476db239a9d665
+Mar-19 14:34:13.962 [Actor Thread 9] DEBUG nextflow.file.FileCollector - Deleting file collector temp dir: /tmp/nxf-8722841983114836392
+Mar-19 14:34:13.965 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'TaskFinalizer' shutdown completed (hard=false)
+Mar-19 14:34:13.967 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Mar-19 14:34:13.973 [main] INFO  nextflow.Nextflow - -[0;35m[nf-core/ampliseq][0;31m Pipeline completed with errors[0m-
+Mar-19 14:34:13.975 [Actor Thread 9] WARN  nextflow.container.SingularityCache - Singularity cache directory has not been defined -- Remote image will be stored in the path: /home/blackboy/nf_amplicon_train/work/singularity -- Use the environment variable NXF_SINGULARITY_CACHEDIR to specify a different location
+Mar-19 14:34:13.975 [Actor Thread 9] INFO  nextflow.container.SingularityCache - Pulling Singularity image https://community-cr-prod.seqera.io/docker/registry/v2/blobs/sha256/34/34e733a9ae16a27e80fe00f863ea1479c96416017f24a907996126283e7ecd4d/data [cache /home/blackboy/nf_amplicon_train/work/singularity/community-cr-prod.seqera.io-docker-registry-v2-blobs-sha256-34-34e733a9ae16a27e80fe00f863ea1479c96416017f24a907996126283e7ecd4d-data.img]
+Mar-19 14:34:13.976 [Actor Thread 12] WARN  nextflow.processor.TaskProcessor - [NFCORE_AMPLISEQ:AMPLISEQ:FORMAT_TAXONOMY] Unable to resume cached task -- See log file for details
+java.util.concurrent.RejectedExecutionException: Task java.util.concurrent.FutureTask@14c220c2[Not completed, task = java.util.concurrent.Executors$RunnableAdapter@76dd4a75[Wrapped task = nextflow.processor.PublishDir$_apply1_closure2@623f005e]] rejected from java.util.concurrent.ThreadPoolExecutor@3ddc70f0[Terminated, pool size = 0, active threads = 0, queued tasks = 0, completed tasks = 34]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2082)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:841)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1377)
+	at java.base/java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:124)
+	at nextflow.processor.PublishDir.apply1(PublishDir.groovy:354)
+	at nextflow.processor.PublishDir.apply0(PublishDir.groovy:258)
+	at nextflow.processor.PublishDir.apply(PublishDir.groovy:316)
+	at nextflow.processor.TaskProcessor.publishOutputs0(TaskProcessor.groovy:1436)
+	at nextflow.processor.TaskProcessor.publishOutputs(TaskProcessor.groovy:1423)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskProcessor.finalizeTask0(TaskProcessor.groovy:2275)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskProcessor.checkCachedOutput(TaskProcessor.groovy:1009)
+	at nextflow.processor.TaskProcessor.checkCachedOrLaunchTask(TaskProcessor.groovy:829)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.processor.TaskProcessor.invokeTask(TaskProcessor.groovy:688)
+	at nextflow.processor.InvokeTaskAdapter.call(InvokeTaskAdapter.groovy:52)
+	at groovyx.gpars.dataflow.operator.DataflowOperatorActor.startTask(DataflowOperatorActor.java:120)
+	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor.access$001(ForkingDataflowOperatorActor.java:35)
+	at groovyx.gpars.dataflow.operator.ForkingDataflowOperatorActor$1.run(ForkingDataflowOperatorActor.java:58)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1575)
+Mar-19 14:34:13.978 [main] DEBUG n.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=0; failedCount=1; ignoredCount=0; cachedCount=19; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=0ms; failedDuration=27.3s; cachedDuration=3m 40s;loadCpus=0; loadMemory=0; peakRunning=1; peakCpus=4; peakMemory=20 GB; ]
+Mar-19 14:34:14.241 [main] DEBUG nextflow.trace.ReportObserver - Workflow completed -- rendering execution report
+Mar-19 14:34:14.977 [main] DEBUG nextflow.trace.TimelineObserver - Workflow completed -- rendering execution timeline
+Mar-19 14:34:15.052 [main] DEBUG nextflow.trace.TraceFileObserver - Workflow completed -- saving trace file
+Mar-19 14:34:15.058 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Mar-19 14:34:15.082 [main] INFO  org.pf4j.AbstractPluginManager - Stop plugin 'nf-schema@2.5.1'
+Mar-19 14:34:15.082 [main] DEBUG nextflow.plugin.BasePlugin - Plugin stopped nf-schema
+Mar-19 14:34:15.083 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Mar-19 14:34:15.084 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

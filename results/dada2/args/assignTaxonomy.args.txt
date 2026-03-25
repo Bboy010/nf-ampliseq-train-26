@@ -1,0 +1,3 @@
+assignTaxonomy	minBoot = 50,tryRC = FALSE
+taxlevels	c("Kingdom", "Phylum", "Class", "Order", "Family", "Genus", "Species")
+seed	100

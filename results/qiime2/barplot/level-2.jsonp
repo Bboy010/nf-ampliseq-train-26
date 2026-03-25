@@ -1,0 +1,1 @@
+load_data(2,["Bacteria;Bacteroidota", "Bacteria;Bacillota", "Bacteria;Pseudomonadota", "Bacteria;Actinomycetota"],["index", "Bacteria;Bacteroidota", "Bacteria;Bacillota", "Bacteria;Pseudomonadota", "Bacteria;Actinomycetota"],[{"index":"SAMPLE1_PE","Bacteria;Bacteroidota":2933.0,"Bacteria;Bacillota":16477.0,"Bacteria;Pseudomonadota":10.0,"Bacteria;Actinomycetota":1333.0}]);

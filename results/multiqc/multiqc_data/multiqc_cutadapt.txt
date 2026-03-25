@@ -1,0 +1,2 @@
+Sample	cutadapt_version	pairs_processed	r1_with_adapters	r2_with_adapters	pairs_too_short	pairs_written	bp_processed	bp_written	percent_trimmed	pairs_filtered_unexplained
+SAMPLE1_PE	5.2	40356	34593	39767	0	34244	24253049	14028018	42.15977545751052	6112

@@ -1,0 +1,4 @@
+Module	Section	Sample Name	Source
+Cutadapt	all_sections	SAMPLE1_PE	/home/blackboy/nf_amplicon_train/work/0b/a202daccb3904d31cd61f773adf5e5/5/SAMPLE1_PE.trimmed.cutadapt.log
+FastQC	all_sections	SAMPLE1_PE_1	/home/blackboy/nf_amplicon_train/work/0b/a202daccb3904d31cd61f773adf5e5/3/SAMPLE1_PE_1_fastqc.zip
+FastQC	all_sections	SAMPLE1_PE_2	/home/blackboy/nf_amplicon_train/work/0b/a202daccb3904d31cd61f773adf5e5/4/SAMPLE1_PE_2_fastqc.zip

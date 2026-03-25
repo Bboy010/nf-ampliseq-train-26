@@ -1,0 +1,2 @@
+sampleID,forwardReads,reverseReads
+SAMPLE1_PE,./data/Sample1_S158_L001_R1_001.fastq.gz,./data/Sample1_S158_L001_R2_001.fastq.gz

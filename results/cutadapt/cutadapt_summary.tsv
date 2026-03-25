@@ -1,0 +1,2 @@
+sample	cutadapt_total_processed	cutadapt_reverse_complemented	cutadapt_passing_filters	cutadapt_passing_filters_percent
+SAMPLE1_PE	40,356		34,244	84.9%

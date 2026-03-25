@@ -1,0 +1,2 @@
+sample	cutadapt_total_processed	cutadapt_reverse_complemented	cutadapt_passing_filters	cutadapt_passing_filters_percent	DADA2_input	filtered	denoisedF	denoisedR	merged	nonchim	input_tax_filter	filtered_tax_filter	lost	retained_percent	lost_percent
+SAMPLE1_PE	40,356	NA	34,244	84.9%	34244	21392	21305	21301	20915	20753	20753	20753	0	100	0
